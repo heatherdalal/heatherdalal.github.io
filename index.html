@@ -104,11 +104,10 @@ nav {
   font-size: 0.8rem !important;
   letter-spacing: 0.04em !important;
   font-weight: 600 !important;
-  color: var(--muted) !important;
   transition: background 0.15s !important;
 }
-.nav-cta { color: var(--white) !important; }
-.nav-cta:hover { background: var(--accent-dk) !important; color: var(--white) !important; }
+
+.nav-cta:hover { background: var(--accent-dk) !important; }
 
 .nav-toggle {
   display: none;
@@ -238,7 +237,6 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
   .container { padding: 0 1.25rem; }
 }
 
-
 /* ── PAGE-SPECIFIC ── */
 .hero {
   background: var(--ink);
@@ -337,39 +335,6 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
 .final-cta p { max-width: 520px; margin: 0 auto 0.75rem; }
 .final-cta .tagline { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--ink); margin-bottom: 2rem; display: block; }
 .final-cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; align-items: center; margin-top: 2rem; }
-
-/* ── NAV (inline — no shared.js) ── */
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--white); border-bottom: 1px solid var(--border); padding: 0 2rem;
-}
-.nav-inner {
-  max-width: var(--max); margin: 0 auto;
-  display: flex; align-items: center; justify-content: space-between; height: 64px;
-}
-.nav-logo { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); }
-.nav-links { display: flex; gap: 1.75rem; list-style: none; align-items: center; }
-.nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--muted); transition: color 0.15s; }
-.nav-links a:hover { color: var(--ink); }
-.nav-cta { background: var(--accent) !important; color: var(--white) !important; padding: 0.5rem 1.2rem !important; border-radius: var(--radius) !important; font-size: 0.8rem !important; font-weight: 600 !important; }
-.nav-cta:hover { background: var(--accent-dk) !important; }
-.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
-.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); }
-@media (max-width: 768px) {
-  .nav-toggle { display: flex; }
-  .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); flex-direction: column; padding: 1.5rem 2rem; gap: 1.25rem; }
-  .nav-links.open { display: flex; }
-}
-
-/* ── FOOTER ── */
-footer { background: var(--ink); color: rgba(255,255,255,0.65); padding: 3.5rem 0 2rem; }
-.footer-inner { max-width: var(--max); margin: 0 auto; padding: 0 2rem; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3rem; }
-footer h4 { color: var(--white); font-size: 0.8rem; font-family: var(--sans); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
-footer a { color: rgba(255,255,255,0.6); font-size: 0.88rem; display: block; margin-bottom: 0.5rem; transition: color 0.15s; }
-footer a:hover { color: var(--white); }
-footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
-.footer-bottom { max-width: var(--max); margin: 2rem auto 0; padding: 1.5rem 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: rgba(255,255,255,0.35); }
-@media (max-width: 640px) { .footer-inner { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; } }
 </style>
 </head>
 <body>
@@ -399,7 +364,7 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
       <span class="label" style="color:#93c5fd;">AI Literacy Consulting</span>
       <h1>AI Fluency for Humans.</h1>
       <p class="hero-sub">Think first. Then generate.</p>
-      <p>After twenty years as an academic librarian and researcher studying how people find, evaluate, and trust information, I now help organizations and individuals develop the judgment to use AI well. The problem didn't change. The tools did.</p>
+      <p>After twenty years as an academic librarian and researcher studying how people find, evaluate, and trust information, I now help organizations and individuals develop the judgment to use AI well.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Work with Me</a>
         <a href="#about" class="btn btn-outline-white">Learn More</a>
@@ -457,7 +422,7 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
         <span class="label">About</span>
         <div class="blue-line"></div>
         <h2>The tools have changed. Understanding AI and exercising good judgment are now essential skills.</h2>
-        <p style="margin-top:1.25rem;">For more than 25 years, I've helped people find, evaluate, and use information effectively. As a librarian, educator, researcher, and instructional designer, I've spent my career teaching critical thinking, information literacy, and digital fluency.</p>
+        <p style="margin-top:1.25rem;">For more than 25 years, I've helped people find, evaluate, and use information effectively. As a librarian, educator, researcher, and instructional designer, I've worked across universities, nonprofits, and private organizations.</p>
         <p>Today, those same skills are more important than ever. AI can generate answers instantly, but it cannot replace human judgment. Knowing how to use AI is important. Knowing how to evaluate what it produces is essential.</p>
         <div style="background:var(--bg);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;margin:1.5rem 0;">
           <p style="margin-bottom:0.5rem;"><strong style="color:var(--ink);">AI literacy</strong> is information literacy.</p>
@@ -510,7 +475,7 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
     <span class="label" style="text-align:center;display:block;">Services</span>
     <h2 style="text-align:center;margin-bottom:0.75rem;">How I Work with Organizations</h2>
     <p style="text-align:center;max-width:640px;margin:0 auto 0.5rem;">You're under pressure to build AI capability. The question is how.</p>
-    <p style="text-align:center;max-width:640px;margin:0 auto 2.5rem;font-size:0.95rem;">Off-the-shelf training produces low adoption and no lasting change. Video courses don't build judgment. And most programs are designed by people who understand AI tools -- not by researchers who have spent twenty years studying how people actually learn to evaluate information. That's the difference here.</p>
+    <p style="text-align:center;max-width:640px;margin:0 auto 2.5rem;font-size:0.95rem;">Off-the-shelf training produces low adoption and no lasting change. Video courses don't build judgment. And most vendors optimize for sales, not for your team's actual needs.</p>
     <div class="grid-3">
       <div class="card">
         <span class="label">Core Service</span>
@@ -525,27 +490,27 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
       <div class="card">
         <span class="label">Core Service</span>
         <h3 style="font-size:1.1rem;margin-bottom:0.75rem;">Custom Workshops</h3>
-        <p style="font-size:0.9rem;">Custom-designed or adapted from my existing catalog. Delivered in-person or virtually for staff training, faculty development, library programming, or professional association events.</p>
+        <p style="font-size:0.9rem;">Custom-designed or adapted from my existing catalog. Delivered in-person or virtually for staff training, faculty development, library programming, or professional conferences.</p>
       </div>
       <div class="card">
         <span class="label">Additional Service</span>
         <h3 style="font-size:1.1rem;margin-bottom:0.75rem;">AI Governance, Policy &amp; Ethics</h3>
-        <p style="font-size:0.9rem;">Helping organizations develop responsible AI policies, ethical frameworks, and governance structures. Covers accountability, transparency, equitable use, and building principled AI practices that hold up under real-world conditions.</p>
+        <p style="font-size:0.9rem;">Helping organizations develop responsible AI policies, ethical frameworks, and governance structures. Covers accountability, transparency, equitable use, and building trust.</p>
       </div>
     </div>
   </div>
 </section>
+
 <!-- WORKSHOPS -->
 <section class="section" id="workshops" style="scroll-margin-top:64px;">
   <div class="container">
     <span class="label" style="text-align:center;display:block;">Workshops</span>
     <h2 style="text-align:center;margin-bottom:0.5rem;">Workshop Topics</h2>
-    <p style="text-align:center;max-width:560px;margin:0 auto 2.5rem;">Every session develops judgment, habits, and confidence — not just button-pressing skills. Available 60–90 minutes or half-day, in-person or virtual.</p>
+    <p style="text-align:center;max-width:560px;margin:0 auto 2.5rem;">Every session develops judgment, habits, and confidence — not just button-pressing skills. Available 60–90 minutes or half-day formats.</p>
     <div class="grid-3" style="gap:1.25rem;">
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">Making AI Work for You</h3>
-        <p style="font-size:0.86rem;">What AI tools can and can't do, how to get better results, and how to think critically about what they produce. No technical background needed. 
-</p><p> 
+        <p style="font-size:0.86rem;">What AI tools can and can't do, how to get better results, and how to think critically about what they produce. No technical background needed.</p>
       </div>
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">Think First. Then Generate.</h3>
@@ -557,7 +522,7 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
       </div>
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">AI &amp; Your Job Search</h3>
-        <p style="font-size:0.86rem;">Practical uses for resumes, cover letters, and interview prep alongside critical thinking habits that keep your voice intact.</p>  <P> <a href="https://drive.google.com/file/d/1KoBwfT3zmQNHwVsqDufV_KIzO616TOjX/view?usp=sharing"> Presentation 5/19/26 </a> </p> 
+        <p style="font-size:0.86rem;">Practical uses for resumes, cover letters, and interview prep alongside critical thinking habits that keep your voice intact.</p>
       </div>
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">AI for Library Staff</h3>
@@ -569,15 +534,15 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
       </div>
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">AI Governance, Policy &amp; Ethics</h3>
-        <p style="font-size:0.86rem;">What responsible AI governance looks like in practice. Covers policy frameworks, ethical decision-making, accountability structures, and how organizations can build principled AI use into their culture rather than bolting it on after the fact.</p>
+        <p style="font-size:0.86rem;">What responsible AI governance looks like in practice. Covers policy frameworks, ethical decision-making, accountability structures, and how organizations can build trust.</p>
       </div>
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">NotebookLM: Your AI Research Assistant</h3>
-        <p style="font-size:0.86rem;">Turn any pile of documents into a conversation. Upload articles, reports, and notes, then ask questions, generate summaries, and produce audio overviews of your own material.</p>
+        <p style="font-size:0.86rem;">Turn any pile of documents into a conversation. Upload articles, reports, and notes, then ask questions, generate summaries, and produce audio overviews of your own research.</p>
       </div>
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">Don't Let AI Fool You</h3>
-        <p style="font-size:0.86rem;">Spot scams before they spot you. We break down real-world examples, including a voice-clone scam and a phishing text, so you can see exactly how they work and what gives them away.</p>
+        <p style="font-size:0.86rem;">Spot scams before they spot you. We break down real-world examples, including a voice-clone scam and a phishing text, so you can see exactly how they work and what to watch for.</p>
       </div>
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">Doodles to Strategy</h3>
@@ -585,15 +550,11 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
       </div>
       <div class="card" style="border-top:3px solid var(--accent);">
         <h3 style="font-size:1rem;margin-bottom:0.5rem;">Research Smarter, Not Harder</h3>
-        <p style="font-size:0.86rem;">Academic and deep research with AI. Covers NotebookLM, Perplexity, SciSpace, and Consensus for literature review work, plus deep research modes for longer reports.</p>
+        <p style="font-size:0.86rem;">Academic and deep research with AI. Covers NotebookLM, Perplexity, SciSpace, and Consensus for literature review work, plus deep research modes for longer reports and thesis projects.</p>
       </div>
     </div>
   </div>
 </section>
-
-     
-
-<!-- PULL QUOTE removed — Caroline moved into testimonials grid -->
 
 <!-- TESTIMONIALS -->
 <section class="section" id="testimonials" style="background:var(--bg);scroll-margin-top:64px;">
@@ -605,7 +566,7 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
         <cite>Caroline Aversano</cite><div class="org">Edison Public Library</div>
       </div>
       <div class="testimonial">
-        <blockquote>"Heather is a skilled and dedicated librarian. Her areas of expertise include emerging technologies, AI and information literacy, and instructional design. She would be an asset to any institution."</blockquote>
+        <blockquote>"Heather is a skilled and dedicated librarian. Her areas of expertise include emerging technologies, AI and information literacy, and instructional design. She would be an asset to any organization."</blockquote>
         <cite>Kelly Ross</cite><div class="org">Associate Professor of English, Rider University</div>
       </div>
       <div class="testimonial">
@@ -617,14 +578,13 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
         <cite>Laurel Harris</cite><div class="org">Assistant Professor of English, Rider University</div>
       </div>
       <div class="testimonial">
-        <blockquote>"I've found her to be a knowledgeable, generous, and proactive colleague. She worked tirelessly to maximize resources for my students and would be a kind, creative member of any team she joined."</blockquote>
+        <blockquote>"I've found her to be a knowledgeable, generous, and proactive colleague. She worked tirelessly to maximize resources for my students and would be a kind, creative member of any team."</blockquote>
         <cite>Justin Burton</cite><div class="org">Rider University</div>
       </div>
- <div class="testimonial">
-        <blockquote>The staff training workshop was excellent!!! This is so important for every librarian/library staff to know."</blockquote>
-        <cite>Bonnie </cite><div class="org">Springfield Public Library</div>
+      <div class="testimonial">
+        <blockquote>"The staff training workshop was excellent!!! This is so important for every librarian/library staff to know."</blockquote>
+        <cite>Bonnie</cite><div class="org">Springfield Public Library</div>
       </div>
-
     </div>
   </div>
 </section>
@@ -641,16 +601,16 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
         <div>
           <label style="display:block;font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.4rem;">Name *</label>
-          <input type="text" name="name" required placeholder="Your full name" style="width:100%;padding:0.75rem 1rem;border:1.5px solid var(--border);border-radius:6px;font-family:var(--sans);font-size:0.95rem;color:var(--ink);outline:none;">
+          <input type="text" name="name" required placeholder="Your full name" style="width:100%;padding:0.75rem 1rem;border:1.5px solid var(--border);border-radius:6px;font-family:var(--sans);font-size:0.95rem;color:var(--ink);background:var(--white);">
         </div>
         <div>
           <label style="display:block;font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.4rem;">Email *</label>
-          <input type="email" name="email" required placeholder="your@email.com" style="width:100%;padding:0.75rem 1rem;border:1.5px solid var(--border);border-radius:6px;font-family:var(--sans);font-size:0.95rem;color:var(--ink);outline:none;">
+          <input type="email" name="email" required placeholder="your@email.com" style="width:100%;padding:0.75rem 1rem;border:1.5px solid var(--border);border-radius:6px;font-family:var(--sans);font-size:0.95rem;color:var(--ink);background:var(--white);">
         </div>
       </div>
       <div>
         <label style="display:block;font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.4rem;">Inquiry Type *</label>
-        <select name="inquiry_type" required style="width:100%;padding:0.75rem 1rem;border:1.5px solid var(--border);border-radius:6px;font-family:var(--sans);font-size:0.95rem;color:var(--ink);background:var(--white);outline:none;appearance:none;">
+        <select name="inquiry_type" required style="width:100%;padding:0.75rem 1rem;border:1.5px solid var(--border);border-radius:6px;font-family:var(--sans);font-size:0.95rem;color:var(--ink);background:var(--white);">
           <option value="" disabled selected>Select one...</option>
           <option>Consulting</option>
           <option>Speaking</option>
@@ -660,9 +620,9 @@ footer p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
       </div>
       <div>
         <label style="display:block;font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.4rem;">Message *</label>
-        <textarea name="message" required rows="5" placeholder="Tell me what you're working on, your timeline, and any relevant context." style="width:100%;padding:0.75rem 1rem;border:1.5px solid var(--border);border-radius:6px;font-family:var(--sans);font-size:0.95rem;color:var(--ink);line-height:1.6;resize:vertical;outline:none;"></textarea>
+        <textarea name="message" required rows="5" placeholder="Tell me what you're working on, your timeline, and any relevant context." style="width:100%;padding:0.75rem 1rem;border:1.5px solid var(--border);border-radius:6px;font-family:var(--sans);font-size:0.95rem;color:var(--ink);background:var(--white);"></textarea>
       </div>
-      <button type="submit" style="padding:1rem;background:var(--accent);color:var(--white);border:none;border-radius:6px;font-family:var(--sans);font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;">Send Message</button>
+      <button type="submit" style="padding:1rem;background:var(--accent);color:var(--white);border:none;border-radius:6px;font-family:var(--sans);font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:background 0.15s;">Send Message</button>
       <div style="text-align:center;">
         <script>
         (function() {
